@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Modal Child Window A</title>
+<script>
+    function shutDown() {
+        window.close();
+    }
+    
+    function start() {
+        window.showModalDialog("dialogB.html");
+    }
+</script>
+</head>
+<body>
+    <div>
+        <p>I'm modal dialog A</p>
+    </div>
+    <button type="button" onclick="shutDown()">Close</button>
+    <button type="button" onclick="start()">open modal dialog B</button>
+</body>
+</html>
